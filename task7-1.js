@@ -57,13 +57,28 @@ let users = [
   },
 ];
 
-let arrayPhone;
-arrayPhone = users.map(function (user) {
-  let balance = user.balance.replace(/[^\d.\+]/g, " ").replace(/ /g, "");
+let arrayPhone = users.map(function (user) {
+  let balance = user.balance.replace(/[^\d.\+]/g, "");
   if (balance > 2000) {
     return user.phone;
   }
-  console.log(balance);
 });
 console.log(arrayPhone);
 console.log(typeof arrayPhone);
+
+let arrayBalance = users.map(function (bal) {
+  return bal.balance;
+});
+console.log(arrayBalance);
+console.log(typeof arrayBalance);
+
+let sum = arrayBalance.reduce(function (a, b) {
+  for (const i of arrayBalance) {
+    let element = Number(i.replace(/[^\d.\+]/g, ""));
+  }
+
+  return a + b;
+}, "");
+
+console.log(sum);
+console.log(typeof sum);
