@@ -72,12 +72,14 @@ let arrayBalance = users.map(function (bal) {
 console.log(arrayBalance);
 console.log(typeof arrayBalance);
 
-let sum = arrayBalance.reduce(function (a, b) {
-  for (const i of arrayBalance) {
-    let element = Number(i.replace(/[^\d.\+]/g, ""));
-  }
+let initialValue = 0;
+let sum = arrayBalance.reduce(function (accum, curren) {
+  let element = Number(curren.replace(/[^\d.\+]/g, ""));
+  let result = (Number(accum) + element).toFixed(2);
+  console.log(element);
+  console.log(typeof element);
 
-  return a + b;
+  return result;
 }, "");
 
 console.log(sum);
