@@ -1,0 +1,19 @@
+.main{
+    position: relative;
+    background-color: aqua;
+    color: rgb(83, 3, 50);
+    width: 200px;
+    height: 100px;
+}
+#modal{
+    position: absolute;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 30%;
+    height: 30%;
+    left: 200px;
+   top: 50px;
+    overflow: auto;
+    background-color: yellow;
+}
