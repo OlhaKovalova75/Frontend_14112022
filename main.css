@@ -1,0 +1,123 @@
+
+.form{
+    margin-top: 10px;
+   
+}
+.foto {
+
+    width: 200px;
+    height: 200px;
+}
+ .item-block{
+    display: block;
+    margin: 20px;
+    width: 25%;
+    height: 100%;
+} 
+
+
+
+  .formBase {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: 0.5s all;
+}
+
+.formBase.active { 
+    opacity: 1; 
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+
+.form_popup {
+    position: absolute;
+    margin: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    background: rgb(174, 213, 228);
+    width: 500px;
+   height: 100%;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.form_popup.active { 
+    transform: translate(-50%, -50%) scale(1); 
+    transition: 0.5s all;
+}
+/* Конец важной части */
+  
+.closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+  
+  
+  
+.form_popup label {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+.form_popup input {
+    height: 45px;
+    font-size: 18px;
+    border: 1px slategrey;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.form_popup input:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.form_popup input:focus  {
+    color: #80f0b8;
+}
+
+.form_popup textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 14px;
+    
+}
+
+.form_popup textarea:focus {
+    border-bottom: 1px solid #6cee82;
+}
+
+.form_popup textarea:focus + .label__text {
+    color: #05afa1;
+}
+
+.form_popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #01050c;
+    background: #000408;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}

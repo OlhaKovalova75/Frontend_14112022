@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product card</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <a href="">
+          <img
+            class="foto"
+            src="./image/Osprey_Nebula_reveriegreencetaceanblue_1_22_36f4 (1).png"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="item-block">
+        <h4 class="name">Рюкзак Osprey Nebula</h4>
+        <p>Функціональний і універсальний рюкзак для міста, 32 л</p>
+        <div class="price"><span>4500</span> <span>UAH</span></div>
+        <div>
+          <select name="quantity" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <button class="button">Купити</button>
+      </div>
+    </div>
+    <div class="formBase">
+      <form
+        class="form_popup"
+        action="https://www.google.com.ua/search"
+        method="post"
+      >
+        <div>
+          <div class="form">
+            <label for="">First Name </label>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+          <div class="form">
+            <label for="">Last Name </label
+            ><input type="text" name="lastName" id="lastName" />
+          </div>
+          <div class="form">
+            <label for=""> City </label>
+
+            <select name="city" id="city">
+              <option value="Dnipro">Dnipro</option>
+              <option value="Kyiv">Kyiv</option>
+              <option value="Lviv">Lviv</option>
+              <option value="Lisbon" selected>Lisbon</option>
+            </select>
+          </div>
+          <div class="form">
+            <label for=""> Nova Poshta Storage </label>
+
+            <select name="post" id="post">
+              <option value="1" selected>#1 відділення</option>
+              <option value="2">#2 відділення</option>
+              <option value="3">#3 відділення</option>
+              <option value="4">#4 відділення</option>
+              <option value="5">#5 відділення</option>
+            </select>
+          </div>
+          <div class="form">
+            <label for=""
+              >Форма оплати
+              <div class="radio">
+                <input type="radio" name="radio" value="after" /> Післяплата
+                <input type="radio" name="radio" checked value="before" />
+                Оплата банківською картою
+              </div></label
+            >
+          </div>
+
+          <div class="form">
+            <label for="">Номенклатура</label>
+            <table id="quantityTable">
+              <tr>
+                <th class="row">Найменування</th>
+                <th class="row">Кількість</th>
+                <th class="row">Ціна</th>
+                <th class="row sum">Сума</th>
+              </tr>
+            </table>
+          </div>
+          <div class="form">
+            <label for="">Коментар </label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+        <span class="closePopup">&times;</span>
+      </form>
+    </div>
+
+    <script src="./products.js"></script>
+  </body>
+</html>
