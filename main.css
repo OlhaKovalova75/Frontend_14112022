@@ -1,128 +1,25 @@
-
-.form{
-    margin-top: 10px;
-   }
-.img {
-    width: 200px;
-    height: 200px;
+#loader{
+    display: none;
 }
- .item-block{
+#loader.loading{
     display: block;
-    margin: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 25%;
-    height: 100%;
-} 
-.price{
-    color: rgb(83, 5, 83);
-}
-.button{
-    background-color: #6cee82;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 20%;
-    font-size: 14px;
 }
 
-  .formBase {
-      top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    opacity: 0; 
-    pointer-events: none; 
-    transition: 0.5s all;
-}
-
-.formBase.active { 
-    opacity: 1; 
-    pointer-events: all; 
-    transition: 0.5s all;
-}
-
-.form_popup {
-    position: absolute;
-    margin: 20px;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); 
-    background: rgb(122, 212, 104);
-    width: 500px;
-      font-family: Arial, Helvetica, sans-serif;
-    padding: 25px;
-    transition: 0.5s all;
-}
-
-.form_popup.active { 
-    transform: translate(-50%, -50%) scale(1); 
-    transition: 0.5s all;
-}
-  
-.closePopup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-  
-    
-.form_popup label {
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.email,.tel {
+h2{
+    background-color: rgb(145, 7, 103);
+   text-align: center;
+   
+} p{
     background-color: pink;
 }
-
-.form_popup input {
-  
-    height: 45px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px rgb(56, 67, 78);
-    outline: none;
-    border-bottom: 1px solid #cfd0d3;
+#posts{
+    display: block;
+    margin: auto;
+    background-color: aquamarine;
+    border: solid 2px green;
+    width: 250px;
 }
-
-.form_popup input:focus {
-    border-bottom: 1px solid #2982ff; color: #50074a;
-}
-
-
-.form_popup textarea {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    resize: none;
-    width: 100%;
-    height: 100px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #cfd0d3;
-    font-size: 14px;
-    
-}
-
-.form_popup textarea:focus {
-    border-bottom: 1px solid #6cee82;
-}
-
-.form_popup textarea:focus + .label__text {
-    color: #05afa1;
-}
-
-.form_popup button {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
-    border: 2px solid #01050c;
-    background: #000408;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.5s all;
+img{
+    display: block;
+    margin: auto;
 }
