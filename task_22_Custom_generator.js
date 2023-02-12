@@ -14,15 +14,18 @@
 // console.log(iterator.next()); // false
 // console.log(iterator.next()); // false
 // *******
+
+// 1 варіант
 let arr = ["start", 1, 2, 3, "finish"];
 function Boo() {
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+    if (Number.isInteger(arr[i])) {
+      console.log(`${arr[i]}, done: false `);
+    } else {
+      console.log(`${arr[i]} `);
+    }
   }
+  console.log(`done: true `);
 }
 
 const iterator = Boo();
-// console.log(iterator.next()); // 1
-// console.log(iterator.next()); // 1
-// console.log(iterator.next()); // false
-// console.log(iterator.next()); // false
